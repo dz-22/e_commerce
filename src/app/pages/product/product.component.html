@@ -1,0 +1,31 @@
+
+<div class="container">
+
+  <div class="logos ">
+    <img id="logos" height="100px"  src="https://inkbotdesign.com/wp-content/uploads/2015/07/Levis-Logo-Design-1024x683.png" alt="">
+    <img id="logos" height="100px" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_750,h_400/http://assets.designhill.com/design-blog/wp-content/uploads/2019/04/10.png" alt="" >
+    <img id="logos" height="100px" src="https://assets.turbologo.ru/blog/ru/2021/11/12081137/Chanel_logo.png" alt="">
+    <img id="logos" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0RbzIxu9HSeBMoFSsrpZjhgCKnYtAfaWUe5bqlzWJ_s9u74iBvT0sZz1791XwAuX4cjI&usqp=CAU" alt="">
+    <img id="logos" height="100px" src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30143419/95.png" alt="">
+    <img id="logos" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRtpasxwOQQLK21Wp_ol7IIwFhp_R-yA1r_35xDDW4yS_SIpRpmbY_4r792Q738IVJjog&usqp=CAU" alt="">
+    <img id="logos" height="100px" src="https://assets.turbologo.ru/blog/ru/2021/11/12081039/Dolce-Gabbana-Logo.png" alt="">
+  </div>
+
+  <div class="row" >
+  @for (item of data;track $index){
+    <div class="col-4" style="display: flex;">
+    <div class="card ms-1 mt-3 mb-5 p-1" >
+    <img class="image ms-2" width="250px" height="190px" style="border-radius: 15%;" src="{{item.image}}" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title | slice:0:20}}</h5>
+      <p class="card-text">{{item.description | slice: 0:90}}</p>
+      <a style="background-color: rgb(21, 4, 4);" routerLink="{{item.id}}" class="btn btn-primary">{{item.price}}</a>
+    </div>
+  </div>
+  </div>
+  }
+
+  </div>
+
+
+  </div>

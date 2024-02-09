@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url(https://media.istockphoto.com/id/457923471/photo/abstract-bokeh-background.jpg?s=612x612&w=0&k=20&c=RFiNGAK3-XX6Laf63ZNIreCSkkFVSnF0lLPgIGm0KP4=);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
